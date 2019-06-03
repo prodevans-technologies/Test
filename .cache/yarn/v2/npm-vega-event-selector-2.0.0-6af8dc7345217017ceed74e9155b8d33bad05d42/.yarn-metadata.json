@@ -1,0 +1,64 @@
+{
+  "manifest": {
+    "name": "vega-event-selector",
+    "version": "2.0.0",
+    "description": "A CSS-inspired language to select, sequence, and compose DOM events.",
+    "keywords": [
+      "vega",
+      "event",
+      "selector"
+    ],
+    "license": "BSD-3-Clause",
+    "author": {
+      "name": "UW Interactive Data Lab",
+      "url": "http://idl.cs.washington.edu"
+    },
+    "contributors": [
+      {
+        "name": "Jeffrey Heer",
+        "url": "http://idl.cs.washington.edu"
+      },
+      {
+        "name": "Arvind Satyanarayan",
+        "url": "http://arvindsatya.com"
+      }
+    ],
+    "main": "build/vega-event-selector.js",
+    "module": "index",
+    "jsnext:main": "index",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/vega/vega-event-selector.git"
+    },
+    "scripts": {
+      "build": "npm run test && uglifyjs build/vega-event-selector.js -c -m -o build/vega-event-selector.min.js",
+      "rollup": "rollup -f umd -n vega -o build/vega-event-selector.js -- index.js",
+      "pretest": "rm -rf build && mkdir build && npm run rollup",
+      "test": "tape 'test/**/*-test.js' && eslint index.js src test",
+      "prepublish": "npm run build",
+      "postpublish": "git push && git push --tags && zip -j build/vega-event-selector.zip -- LICENSE README.md build/vega-event-selector.js build/vega-event-selector.min.js"
+    },
+    "devDependencies": {
+      "eslint": "4",
+      "rollup": "0.43",
+      "tape": "4",
+      "uglify-js": "3"
+    },
+    "_registry": "npm",
+    "_loc": "/opt/app-root/src/.cache/yarn/v2/npm-vega-event-selector-2.0.0-6af8dc7345217017ceed74e9155b8d33bad05d42/package.json",
+    "readmeFilename": "README.md",
+    "readme": "# vega-event-selector\n\nA CSS-inspired language to select, sequence, and compose DOM events into event streams.\n\nExports the following method:\n\n<a name=\"selector\" href=\"#selector\">#</a>\nvega.<b>selector</b>(<i>selector</i>[, <i>source</i>, <i>marks</i>])\n[<>](https://github.com/vega/vega-event-selector/blob/master/src/event-selector.js \"Source\")\n\nTakes an [event _selector_ string](https://vega.github.io/vega/docs/event-streams/#selector) as input and returns a parsed [event stream object](https://vega.github.io/vega/docs/event-streams/#object) definition. The optional _source_ argument takes a string indicating the source value to use by default (normally `\"view\"`). The optional _marks_ argument takes an object whose keys will be treated as the legal mark types, so long as the corresponding values are truthy. For more, see the [Vega Event Stream documentation](https://vega.github.io/vega/docs/event-streams).\n",
+    "licenseText": "Copyright (c) 2017, University of Washington Interactive Data Lab\nAll rights reserved.\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are met:\n\n1. Redistributions of source code must retain the above copyright notice, this\n   list of conditions and the following disclaimer.\n\n2. Redistributions in binary form must reproduce the above copyright notice,\n   this list of conditions and the following disclaimer in the documentation\n   and/or other materials provided with the distribution.\n\n3. Neither the name of the copyright holder nor the names of its contributors\n  may be used to endorse or promote products derived from this software\n  without specific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\"\nAND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\nIMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\nDISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE\nFOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\nDAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR\nSERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER\nCAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,\nOR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE\nOF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n"
+  },
+  "artifacts": [],
+  "remote": {
+    "resolved": "https://registry.yarnpkg.com/vega-event-selector/-/vega-event-selector-2.0.0.tgz#6af8dc7345217017ceed74e9155b8d33bad05d42",
+    "type": "tarball",
+    "reference": "https://registry.yarnpkg.com/vega-event-selector/-/vega-event-selector-2.0.0.tgz",
+    "hash": "6af8dc7345217017ceed74e9155b8d33bad05d42",
+    "registry": "npm",
+    "packageName": "vega-event-selector"
+  },
+  "registry": "npm",
+  "hash": "6af8dc7345217017ceed74e9155b8d33bad05d42"
+}

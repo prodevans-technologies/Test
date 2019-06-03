@@ -1,0 +1,65 @@
+{
+  "manifest": {
+    "name": "jupyterlab-topbar-extension",
+    "version": "0.3.0",
+    "description": "JupyterLab extension to expose the top bar space",
+    "keywords": [
+      "jupyter",
+      "jupyterlab",
+      "jupyterlab-extension"
+    ],
+    "homepage": "https://github.com/jtpio/jupyterlab-topbar",
+    "bugs": {
+      "url": "https://github.com/jtpio/jupyterlab-topbar"
+    },
+    "license": "BSD-3-Clause",
+    "author": {
+      "name": "Jeremy Tuloup"
+    },
+    "files": [
+      "lib/**/*.{d.ts,eot,gif,html,jpg,js,js.map,json,png,svg,woff2,ttf}",
+      "style/**/*.{css,eot,gif,html,jpg,json,png,svg,woff2,ttf}",
+      "schema/*.json"
+    ],
+    "main": "lib/index.js",
+    "types": "lib/index.d.ts",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/jtpio/jupyterlab-topbar.git"
+    },
+    "scripts": {
+      "build": "tsc",
+      "clean": "rimraf lib",
+      "prepare": "npm run clean && npm run build",
+      "watch": "tsc -w"
+    },
+    "dependencies": {
+      "@jupyterlab/application": "^0.19.1",
+      "@jupyterlab/apputils": "^0.19.1",
+      "@jupyterlab/coreutils": "^2.2.1",
+      "@jupyterlab/mainmenu": "^0.8.1",
+      "jupyterlab-topbar": "^0.3.0"
+    },
+    "devDependencies": {
+      "rimraf": "^2.6.1",
+      "typescript": "~3.1.1"
+    },
+    "jupyterlab": {
+      "extension": true,
+      "schemaDir": "schema"
+    },
+    "_registry": "npm",
+    "_loc": "/opt/app-root/src/.cache/yarn/v2/.tmp/0a9752bdfaa285b8c868e3b00d3d4aff/package.json",
+    "readmeFilename": "README.md",
+    "readme": "# JupyterLab Top Bar Extension\n\nExperiments with JupyterLab's top bar.\n"
+  },
+  "artifacts": [],
+  "remote": {
+    "type": "tarball",
+    "reference": "file:../extensions/jupyterlab-topbar-extension-0.3.0.tgz",
+    "registry": "npm",
+    "hash": ""
+  },
+  "registry": "npm",
+  "hash": "a0d2d9ee0af0d43d1aefa3d47ed33a67a4c87c10"
+}

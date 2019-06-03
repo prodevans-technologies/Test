@@ -1,0 +1,65 @@
+{
+  "manifest": {
+    "name": "jupyterlab-topbar",
+    "version": "0.3.0",
+    "description": "JupyterLab Top Bar interface",
+    "keywords": [
+      "jupyter",
+      "jupyterlab",
+      "jupyterlab-extension"
+    ],
+    "homepage": "https://github.com/jtpio/jupyterlab-topbar",
+    "bugs": {
+      "url": "https://github.com/jtpio/jupyterlab-topbar/issues"
+    },
+    "license": "BSD-3-Clause",
+    "author": {
+      "name": "Jeremy Tuloup"
+    },
+    "files": [
+      "lib/**/*.{d.ts,eot,gif,html,jpg,js,js.map,json,png,svg,woff2,ttf}",
+      "style/**/*.{css,eot,gif,html,jpg,json,png,svg,woff2,ttf}"
+    ],
+    "main": "lib/index.js",
+    "types": "lib/index.d.ts",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/jtpio/jupyterlab-topbar.git"
+    },
+    "scripts": {
+      "clean:src": "rimraf lib",
+      "clean": "npm run clean:src",
+      "build:src": "tsc",
+      "build": "npm run build:src",
+      "watch": "tsc -w"
+    },
+    "dependencies": {
+      "@jupyterlab/apputils": "^1.0.0-alpha.6",
+      "@phosphor/algorithm": "^1.1.2",
+      "@phosphor/coreutils": "^1.3.0",
+      "@phosphor/domutils": "^1.1.2",
+      "@phosphor/dragdrop": "^1.3.0",
+      "@phosphor/messaging": "^1.2.2",
+      "@phosphor/widgets": "^1.6.0"
+    },
+    "devDependencies": {
+      "rimraf": "^2.6.1",
+      "typescript": "~3.1.1"
+    },
+    "_registry": "npm",
+    "_loc": "/opt/app-root/src/.cache/yarn/v2/npm-jupyterlab-topbar-0.3.0-7b629546a3e628116a4e5320d5971917a90e800b/package.json",
+    "readmeFilename": "README.md",
+    "readme": "# JupyterLab Top Bar\n\nJupyterLab Top Bar interface.\n\nExposes the interface to add components to the top bar.\n"
+  },
+  "artifacts": [],
+  "remote": {
+    "resolved": "https://registry.yarnpkg.com/jupyterlab-topbar/-/jupyterlab-topbar-0.3.0.tgz#7b629546a3e628116a4e5320d5971917a90e800b",
+    "type": "tarball",
+    "reference": "https://registry.yarnpkg.com/jupyterlab-topbar/-/jupyterlab-topbar-0.3.0.tgz",
+    "hash": "7b629546a3e628116a4e5320d5971917a90e800b",
+    "registry": "npm",
+    "packageName": "jupyterlab-topbar"
+  },
+  "registry": "npm",
+  "hash": "7b629546a3e628116a4e5320d5971917a90e800b"
+}

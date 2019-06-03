@@ -1,0 +1,72 @@
+{
+  "manifest": {
+    "name": "@phosphor/datagrid",
+    "version": "0.1.6",
+    "description": "PhosphorJS - Tabular Data Grid",
+    "main": "lib/index.js",
+    "types": "lib/index.d.ts",
+    "files": [
+      "lib/*.d.ts",
+      "lib/*.js"
+    ],
+    "dependencies": {
+      "@phosphor/algorithm": "^1.1.2",
+      "@phosphor/coreutils": "^1.3.0",
+      "@phosphor/disposable": "^1.1.2",
+      "@phosphor/domutils": "^1.1.2",
+      "@phosphor/dragdrop": "^1.3.0",
+      "@phosphor/messaging": "^1.2.2",
+      "@phosphor/signaling": "^1.2.2",
+      "@phosphor/widgets": "^1.6.0"
+    },
+    "devDependencies": {
+      "rimraf": "^2.5.2",
+      "typedoc": "^0.7.0",
+      "typescript": "~2.3.0"
+    },
+    "scripts": {
+      "build": "tsc",
+      "clean": "rimraf lib"
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/phosphorjs/phosphor.git"
+    },
+    "author": {
+      "name": "S. Chris Colbert",
+      "email": "sccolbert@gmail.com"
+    },
+    "contributors": [
+      {
+        "name": "A. Darian",
+        "email": "git@darian.af"
+      },
+      {
+        "name": "S. Chris Colbert",
+        "email": "sccolbert@gmail.com"
+      },
+      {
+        "name": "Steven Silvester",
+        "email": "steven.silvester@gmail.com"
+      }
+    ],
+    "license": "BSD-3-Clause",
+    "bugs": {
+      "url": "https://github.com/phosphorjs/phosphor/issues"
+    },
+    "homepage": "https://github.com/phosphorjs/phosphor",
+    "_registry": "npm",
+    "_loc": "/opt/app-root/src/.cache/yarn/v2/npm-@phosphor/datagrid-0.1.6-c5f6d423c2899b22c137b60f07c9054bbce59004/package.json"
+  },
+  "artifacts": [],
+  "remote": {
+    "resolved": "https://registry.yarnpkg.com/@phosphor/datagrid/-/datagrid-0.1.6.tgz#c5f6d423c2899b22c137b60f07c9054bbce59004",
+    "type": "tarball",
+    "reference": "https://registry.yarnpkg.com/@phosphor/datagrid/-/datagrid-0.1.6.tgz",
+    "hash": "c5f6d423c2899b22c137b60f07c9054bbce59004",
+    "registry": "npm",
+    "packageName": "@phosphor/datagrid"
+  },
+  "registry": "npm",
+  "hash": "c5f6d423c2899b22c137b60f07c9054bbce59004"
+}

@@ -1,0 +1,60 @@
+{
+  "manifest": {
+    "name": "@jupyterlab/hub-extension",
+    "version": "0.12.0",
+    "description": "JupyterLab integration for JupyterHub.",
+    "keywords": [
+      "jupyter",
+      "jupyterlab",
+      "jupyterlab-extension"
+    ],
+    "license": "BSD-3-Clause",
+    "author": {
+      "name": "Project Jupyter"
+    },
+    "files": [
+      "lib/*.d.ts",
+      "lib/*.js"
+    ],
+    "main": "lib/index.js",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/jupyterhub/jupyterlab-hub.git"
+    },
+    "scripts": {
+      "build": "tsc",
+      "clean": "rimraf lib",
+      "prepare": "npm run build",
+      "watch": "tsc -w"
+    },
+    "dependencies": {
+      "@jupyterlab/application": "^0.19.1",
+      "@jupyterlab/apputils": "^0.19.1",
+      "@jupyterlab/coreutils": "^2.2.1",
+      "@jupyterlab/mainmenu": "^0.8.1",
+      "@phosphor/widgets": "^1.6.0"
+    },
+    "devDependencies": {
+      "rimraf": "^2.6.1",
+      "typescript": "~3.1.1"
+    },
+    "jupyterlab": {
+      "extension": true
+    },
+    "_registry": "npm",
+    "_loc": "/opt/app-root/src/.cache/yarn/v2/.tmp/fb8a572023213095fa2c8c78619d63e1/package.json",
+    "readmeFilename": "README.md",
+    "readme": "# jupyterlab-hub\n\n[JupyterLab](https://github.com/jupyterlab/jupyterlab) integration for\n[JupyterHub](https://github.com/jupyterhub/jupyterhub).\n\nThis adds a \"Hub\" menu to JupyterLab that allows a user to log out of JupyterHub\nor access their JupyterHub control panel. This follows the JupyterLab extension system where an extension is just an npm package, not wrapped\nin a Python package.\n\n## Prerequisites\n\n* JupyterLab.\n* A properly configured JupyterHub.\n\n## Installation\n\n### Setup user environment\n\nTo install the extension, run:\n\n```bash\njupyter labextension install @jupyterlab/hub-extension\n```\n\nNote that if JupyterHub is served under a sub-directory (for instance `/jupyter`), you will need to pass this information to JupyterLab via `page_config.json`. In an Anaconda installation, this file should be created at `/path/to/anaconda/share/jupyter/lab/settings/page_config.json`. \n\nExample contents of `page_config.json`:\n```json\n{\n    \"hub_prefix\": \"/jupyter\"\n}\n```\n\n### Configure JupyterHub's Spawner to start JupyterLab\n\nConfigure JupyterHub's Spawner to start with a JupyterLab that is aware of the JupyterHub by using a `jupyterhub_config.py` with the following entry:\n\n```\nc.Spawner.cmd = ['jupyter-labhub']\n```\n\n## Development\n\nFor a development install (requires npm version 4 or later), do the following in the repository directory:\n\n```bash\nnpm install\njupyter labextension link .\n```\n\nTo rebuild the package and the JupyterLab app after making changes:\n\n```bash\nnpm run build\njupyter lab build\n```\n",
+    "licenseText": "BSD 3-Clause License\n\nCopyright (c) 2017, Jupyter Development Team\nAll rights reserved.\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are met:\n\n* Redistributions of source code must retain the above copyright notice, this\n  list of conditions and the following disclaimer.\n\n* Redistributions in binary form must reproduce the above copyright notice,\n  this list of conditions and the following disclaimer in the documentation\n  and/or other materials provided with the distribution.\n\n* Neither the name of the copyright holder nor the names of its\n  contributors may be used to endorse or promote products derived from\n  this software without specific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\"\nAND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\nIMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\nDISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE\nFOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\nDAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR\nSERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER\nCAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,\nOR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE\nOF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n"
+  },
+  "artifacts": [],
+  "remote": {
+    "type": "copy",
+    "resolved": "file:../extensions/jupyterlab-hub-extension-0.12.0.tgz#2928622d6b5dfd67b859948f08bf0cf8c55f5717",
+    "hash": "2928622d6b5dfd67b859948f08bf0cf8c55f5717",
+    "registry": "npm",
+    "reference": "/opt/app-root/src/.cache/yarn/v2/.tmp/fb8a572023213095fa2c8c78619d63e1"
+  },
+  "registry": "npm",
+  "hash": "2928622d6b5dfd67b859948f08bf0cf8c55f5717"
+}

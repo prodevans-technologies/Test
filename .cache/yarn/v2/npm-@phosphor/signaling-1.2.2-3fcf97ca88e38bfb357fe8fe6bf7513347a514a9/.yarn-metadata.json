@@ -1,0 +1,70 @@
+{
+  "manifest": {
+    "name": "@phosphor/signaling",
+    "version": "1.2.2",
+    "description": "PhosphorJS - Signals and Slots",
+    "main": "lib/index.js",
+    "types": "lib/index.d.ts",
+    "files": [
+      "lib/*.d.ts",
+      "lib/*.js"
+    ],
+    "dependencies": {
+      "@phosphor/algorithm": "^1.1.2"
+    },
+    "devDependencies": {
+      "rimraf": "^2.5.2",
+      "typedoc": "^0.7.0",
+      "typescript": "~2.3.0"
+    },
+    "scripts": {
+      "build": "tsc",
+      "clean": "rimraf lib",
+      "docs": "typedoc --options tdoptions.json ."
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/phosphorjs/phosphor.git"
+    },
+    "author": {
+      "name": "S. Chris Colbert",
+      "email": "sccolbert@gmail.com"
+    },
+    "contributors": [
+      {
+        "name": "A. Darian",
+        "email": "git@darian.af"
+      },
+      {
+        "name": "Dave Willmer",
+        "email": "dave.willmer@gmail.com"
+      },
+      {
+        "name": "S. Chris Colbert",
+        "email": "sccolbert@gmail.com"
+      },
+      {
+        "name": "Steven Silvester",
+        "email": "steven.silvester@gmail.com"
+      }
+    ],
+    "license": "BSD-3-Clause",
+    "bugs": {
+      "url": "https://github.com/phosphorjs/phosphor/issues"
+    },
+    "homepage": "https://github.com/phosphorjs/phosphor",
+    "_registry": "npm",
+    "_loc": "/opt/app-root/src/.cache/yarn/v2/npm-@phosphor/signaling-1.2.2-3fcf97ca88e38bfb357fe8fe6bf7513347a514a9/package.json"
+  },
+  "artifacts": [],
+  "remote": {
+    "resolved": "https://registry.yarnpkg.com/@phosphor/signaling/-/signaling-1.2.2.tgz#3fcf97ca88e38bfb357fe8fe6bf7513347a514a9",
+    "type": "tarball",
+    "reference": "https://registry.yarnpkg.com/@phosphor/signaling/-/signaling-1.2.2.tgz",
+    "hash": "3fcf97ca88e38bfb357fe8fe6bf7513347a514a9",
+    "registry": "npm",
+    "packageName": "@phosphor/signaling"
+  },
+  "registry": "npm",
+  "hash": "3fcf97ca88e38bfb357fe8fe6bf7513347a514a9"
+}

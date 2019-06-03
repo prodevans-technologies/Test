@@ -1,0 +1,68 @@
+{
+  "manifest": {
+    "name": "@phosphor/keyboard",
+    "version": "1.1.2",
+    "description": "PhosphorJS - Keyboard",
+    "main": "lib/index.js",
+    "types": "lib/index.d.ts",
+    "files": [
+      "lib/*.d.ts",
+      "lib/*.js"
+    ],
+    "dependencies": {},
+    "devDependencies": {
+      "rimraf": "^2.5.2",
+      "typedoc": "^0.7.0",
+      "typescript": "~2.3.0"
+    },
+    "scripts": {
+      "build": "tsc",
+      "clean": "rimraf lib",
+      "docs": "typedoc --options tdoptions.json ."
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/phosphorjs/phosphor.git"
+    },
+    "author": {
+      "name": "S. Chris Colbert",
+      "email": "sccolbert@gmail.com"
+    },
+    "contributors": [
+      {
+        "name": "A. Darian",
+        "email": "git@darian.af"
+      },
+      {
+        "name": "Dave Willmer",
+        "email": "dave.willmer@gmail.com"
+      },
+      {
+        "name": "S. Chris Colbert",
+        "email": "sccolbert@gmail.com"
+      },
+      {
+        "name": "Steven Silvester",
+        "email": "steven.silvester@gmail.com"
+      }
+    ],
+    "license": "BSD-3-Clause",
+    "bugs": {
+      "url": "https://github.com/phosphorjs/phosphor/issues"
+    },
+    "homepage": "https://github.com/phosphorjs/phosphor",
+    "_registry": "npm",
+    "_loc": "/opt/app-root/src/.cache/yarn/v2/npm-@phosphor/keyboard-1.1.2-3e32234451764240a98e148034d5a8797422dd1f/package.json"
+  },
+  "artifacts": [],
+  "remote": {
+    "resolved": "https://registry.yarnpkg.com/@phosphor/keyboard/-/keyboard-1.1.2.tgz#3e32234451764240a98e148034d5a8797422dd1f",
+    "type": "tarball",
+    "reference": "https://registry.yarnpkg.com/@phosphor/keyboard/-/keyboard-1.1.2.tgz",
+    "hash": "3e32234451764240a98e148034d5a8797422dd1f",
+    "registry": "npm",
+    "packageName": "@phosphor/keyboard"
+  },
+  "registry": "npm",
+  "hash": "3e32234451764240a98e148034d5a8797422dd1f"
+}
